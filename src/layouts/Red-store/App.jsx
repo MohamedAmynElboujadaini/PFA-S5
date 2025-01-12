@@ -25,12 +25,8 @@ function App() {
       <br />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products/*" element={<Products/>}>
-
-          <Route path=":product_id" element={<SingleProduct/>} />
-          
-
-        </Route>
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:product_id" element={<SingleProduct />} />
         <Route path="/account" element={<Account />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="*" element={<div>Not Found</div>} />

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Cart from 'components/cart';
 const SingleProduct = () => (
     <div className="small-container single-product">
         <div className="row">
@@ -8,16 +8,16 @@ const SingleProduct = () => (
             </div>
             <div className="col-2">
                 <p>Home / T-Shirt</p>
-                <h1>Red Printed T-Shirt by HRX</h1>
+                <h1>Red Printed T-Shirt by SellerName</h1>
                 <h4>$50.00</h4>
-                <select>
+                {/*<select>
                     <option>Select Size</option>
                     <option>XXL</option>
                     <option>XL</option>
                     <option>L</option>
                     <option>M</option>
                     <option>S</option>
-                </select>
+                </select>*/}
                 <input type="number" defaultValue="1" />
                 <a href="#" className="btn">Add To Cart</a>
 
@@ -25,66 +25,9 @@ const SingleProduct = () => (
                 <br />
                 <p>Give your summer wardrobe a style upgrade with the HRX Men's Active T-Shirt. Team it with a pair of shorts for your morning workout or a denims for an evening out with the guys.</p>
             </div>
+            <Cart/>
         </div>
-        <div className="small-container">
-            <div className="row row-2">
-                <h2>Related Products</h2>
-                <p>View More</p>
-            </div>
-        </div>
-        
-        <div className="small-container">
-            <div className="row">
-                <div className="col-4">
-                    <img src="images/product-9.jpg" alt="Product 9" />
-                    <h4>Red Printed T-Shirt</h4>
-                    <div className="rating">
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star-o"></i>
-                    </div>
-                    <p>$50.00</p>
-                </div>
-                <div className="col-4">
-                    <img src="images/product-10.jpg" alt="Product 10" />
-                    <h4>Red Printed T-Shirt</h4>
-                    <div className="rating">
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star-o"></i>
-                    </div>
-                    <p>$50.00</p>
-                </div>
-                <div className="col-4">
-                    <img src="images/product-11.jpg" alt="Product 11" />
-                    <h4>Red Printed T-Shirt</h4>
-                    <div className="rating">
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star-o"></i>
-                    </div>
-                    <p>$50.00</p>
-                </div>
-                <div className="col-4">
-                    <img src="images/product-12.jpg" alt="Product 12" />
-                    <h4>Red Printed T-Shirt</h4>
-                    <div className="rating">
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star"></i>
-                        <i className="fa fa-star-o"></i>
-                    </div>
-                    <p>$50.00</p>
-                </div>
-            </div>
-        </div>
+
     </div>
 );
 
