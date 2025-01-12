@@ -25,7 +25,7 @@ const SingleProduct = () => (
                 <br />
                 <p>Give your summer wardrobe a style upgrade with the HRX Men's Active T-Shirt. Team it with a pair of shorts for your morning workout or a denims for an evening out with the guys.</p>
             </div>
-            <Cart/>
+            
         </div>
 
     </div>
