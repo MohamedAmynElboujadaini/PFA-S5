@@ -12,7 +12,7 @@ import Account from '../../views/Account.jsx';
 import Profile from '../../views/Profile.jsx';
 import UserName from '../../components/username.jsx';
 import SingleProduct from 'views/SingleProduct.jsx';
-
+import Cart from 'views/Cart.jsx';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -29,6 +29,7 @@ function App() {
         <Route path="/products/:product_id" element={<SingleProduct />} />
         <Route path="/account" element={<Account />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/cart" element={<Cart/>} />
         <Route path="*" element={<div>Not Found</div>} />
       </Routes>
       <Footer />

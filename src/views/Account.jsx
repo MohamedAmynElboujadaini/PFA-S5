@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Account = () => {
-    const [isLoginForm, setIsLoginForm] = useState(true); // State to toggle between forms
+    const [isLoginForm, setIsLoginForm] = useState(false); // State to toggle between forms
 
     const showLoginForm = () => {
         setIsLoginForm(true);

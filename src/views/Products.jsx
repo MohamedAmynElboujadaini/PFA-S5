@@ -20,27 +20,27 @@ const Products = () => (
     </div>
     <div className="row">
     <div className="col-4">
-                    <ProductCard imageUrl={require("../assets/images/product-1.jpg")} productName="Red Printed T-Shirt" productPrice="50.00" productLink="" rating="4" />
+                    <ProductCard productId={1} imageUrl={require("../assets/images/product-1.jpg")} productName="Red Printed T-Shirt" productPrice="50.00" productLink="" rating="4" />
                 </div>
                 <div className="col-4">
-                    <ProductCard imageUrl={require("../assets/images/product-1.jpg")} productName="Red Printed T-Shirt" productPrice="50.00" productLink="" rating="4" />
+                    <ProductCard productId={2} imageUrl={require("../assets/images/product-1.jpg")} productName="Red Printed T-Shirt" productPrice="50.00" productLink="" rating="4" />
                 </div>
                 <div className="col-4">
-                <ProductCard imageUrl={require("../assets/images/product-1.jpg")} productName="Red Printed T-Shirt" productPrice="50.00" productLink="" rating="4" />
+                <ProductCard productId={3} imageUrl={require("../assets/images/product-1.jpg")} productName="Red Printed T-Shirt" productPrice="50.00" productLink="" rating="4" />
                 </div>
                 <div className="col-4">
-                <ProductCard imageUrl={require("../assets/images/product-1.jpg")} productName="Red Printed T-Shirt" productPrice="50.00" productLink="" rating="4" />
+                <ProductCard productId={4} imageUrl={require("../assets/images/product-1.jpg")} productName="Red Printed T-Shirt" productPrice="50.00" productLink="" rating="4" />
 
                 </div>
             </div>
             <h2 className="title">Latest Products</h2>
             <div className="row">
                 <div className="col-4">
-                <ProductCard imageUrl={require("../assets/images/product-5.jpg")} productName="Red Printed T-Shirt" productPrice="50.00" productLink="" rating="4" />
+                <ProductCard productId={5} imageUrl={require("../assets/images/product-5.jpg")} productName="Red Printed T-Shirt" productPrice="50.00" productLink="" rating="4" />
 
                 </div>
                 <div className="col-4">
-                <ProductCard imageUrl={require("../assets/images/product-7.jpg")} productName="Red Printed T-Shirt" productPrice="50.00" productLink="" rating="4" />
+                <ProductCard productId={6} imageUrl={require("../assets/images/product-7.jpg")} productName="Red Printed T-Shirt" productPrice="50.00" productLink="" rating="4" />
 
                 </div>
                 <div className="col-4">

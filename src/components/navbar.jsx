@@ -36,7 +36,7 @@ const StoreNavbar = () => {
               <Link className="navbar_link" to="/red-store/profile">Profile</Link>
             </NavItem>
             <NavItem>
-              <Link className="navbar_link" to="/red-store/profile">
+              <Link className="navbar_link" to="/red-store/cart">
                 <img src={cartPng} width="30px" height="30px" alt="Cart" />
               </Link>
             </NavItem>
