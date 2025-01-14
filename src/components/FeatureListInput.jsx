@@ -9,8 +9,8 @@ import {
   Label
 } from 'reactstrap';
 
-const FeatureListInput = ({ onChange }) => {
-  const [features, setFeatures] = useState([]);
+const FeatureListInput = ({ onChange,previous_features=[] }) => {
+  const [features, setFeatures] = useState(previous_features);
   const [currentFeature, setCurrentFeature] = useState('');
 
   const handleAddFeature = () => {

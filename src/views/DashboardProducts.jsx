@@ -23,8 +23,8 @@ import { Card, CardHeader, CardBody, Row, Col, Container, CardTitle, CardImg } f
 import { Link } from "react-router-dom";
 
 
+
 import DashboardProductCard from "components/dashboard_product_card.jsx";
-import DashboardProductCard2 from "components/dashboard_product_card_2.jsx";
 
 
 
@@ -51,17 +51,17 @@ function DashboardProducts() {
                     <Row >
                         {/* Product Card */}
                         <Col md="3" className="mb-4">
-                            <DashboardProductCard2/>
+                            <DashboardProductCard/>
                         </Col>
                         <Col md="3" className="mb-4">
-                            <DashboardProductCard2/>
+                            <DashboardProductCard/>
                         </Col>
                                                 {/* Product Card */}
                                                 <Col md="3" className="mb-4">
-                            <DashboardProductCard2/>
+                            <DashboardProductCard/>
                         </Col>
                         <Col md="3" className="mb-4">
-                            <DashboardProductCard2/>
+                            <DashboardProductCard/>
                         </Col>
 
                     </Row>

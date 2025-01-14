@@ -18,18 +18,27 @@ import {
 
 const AddProduct = () => {
   //get product with axios
+  const initial_product={
+    name: 'laptop',
+    description: 'huge with good instructions',
+    price: '11',
+    Manufacturer: 'asus',
+    Category: 'tech',
+    Features: ["good screen", "fast processor"],
+    image: null
+  }
 
 
   const [product, setProduct] = useState({
-    name: '',
-    description: '',
-    price: '',
-    Manufacturer: '',
-    Category: '',
-    Features: [],
+    name: initial_product.name,
+    description: initial_product.description,
+    price: initial_product. price,
+    Manufacturer: initial_product.Manufacturer,
+    Category: initial_product.Category,
+    Features:initial_product.Features,
     image: null
   });
-  const [features, setFeatures] = useState([]);
+  const [features, setFeatures] = useState(initial_product.Features);
 
   const [previewImage, setPreviewImage] = useState(null);
 
@@ -159,7 +168,7 @@ const AddProduct = () => {
                   />
                 </FormGroup>
 
-                <FeatureListInput onChange={handleFeatureChange} />
+                <FeatureListInput onChange={handleFeatureChange} previous_features={product.Features} />
 
                 <FormGroup>
                   <Label for="productImage">

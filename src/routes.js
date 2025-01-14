@@ -53,8 +53,9 @@ var routes = [
     component: <DashboardProductDetails/>,
     layout: "/admin",
   },
+  
   {
-    path: "/edit/:id",
+    path: "/products/edit/:id",
     name: "Edit a product",
     rtlName: "2لوحة القيادة",
     icon: "tim-icons icon-pencil",

@@ -150,21 +150,21 @@ const DashboardProductDetails = ({ product }) => {
                         <CardBody>
                             <CardTitle className='font-weight-bold' tag="h2">{actualProduct.title}</CardTitle>
                             <p className="text-muted">{actualProduct.description}</p>
-                            <div className="d-flex align-items-center mb-3">
+                            <div className="d-flex align-items-center mb-3  justify-content-end">
                                 <h3 className='font-weight-bold mb-0 me-3'>${actualProduct.price}</h3>
                             </div>
                             <div className="d-flex align-items-center">
-                                <span style={{ color: '#666', paddingRight: '5px' }}>
+                                <h3 style={{ color: '#666', paddingRight: '8px' }}>
                                     {actualProduct.rating}/5
-                                </span>
-                                <span style={{ color: '#666', scale: '1.2' }}>
+                                </h3>
+                                <h3 style={{ color: '#666', scale: '1.2' }}>
                                     {getSentimentIcon(actualProduct.rating)}
-                                </span>
-                                <span style={{ color: '#666', paddingLeft: '5px' }}>
+                                </h3>
+                                <h3 style={{ color: '#666', paddingLeft: '8px' }}>
                                     ({actualProduct.reviews} reviews)
-                                </span>
+                                </h3>
                             </div>
-                            <Button color="primary" tag={Link} to="/checkout">
+                            <Button color="primary" tag={Link} to="/admin/products/edit/1">
                                 Edit product
                             </Button>
                         </CardBody>
@@ -182,6 +182,51 @@ const DashboardProductDetails = ({ product }) => {
                 </Row>
             </Card>
 
+
+            {/* Statistics Section */}
+            <Row>
+                {/* Sales Trend */}
+                <Col md={4}>
+                    <Card className="mb-4">
+                        <CardHeader>
+                            <CardTitle className='font-weight-bold' tag="h3">Total sales</CardTitle>
+                        </CardHeader>
+                        <CardBody>
+                            <div className='font-weight-bold h4' style={{ height: '20px' }}>
+                                $500.99
+                            </div>
+                        </CardBody>
+                    </Card>
+                </Col>
+                {/* sold units */}
+                <Col md={4}>
+                    <Card className="mb-4">
+                        <CardHeader>
+                            <CardTitle className='font-weight-bold ' tag="h3">Units sold </CardTitle>
+                        </CardHeader>
+                        <CardBody>
+                            <div className='font-weight-bold h4' style={{ height: '20px' }}>
+                                45 Units
+                            </div>
+                        </CardBody>
+                    </Card>
+                </Col>
+
+                {/* units sold by day */}
+                <Col md={4}>
+                    <Card className="mb-4">
+                        <CardHeader>
+                            <CardTitle className='font-weight-bold ' tag="h3">Average units sold by day</CardTitle>
+                        </CardHeader>
+                        <CardBody>
+                            <div className='font-weight-bold h4' style={{ height: '20px' }}>
+                                3.5 Units
+                            </div>
+                        </CardBody>
+                    </Card>
+
+                </Col>
+            </Row>
             {/* Charts Section */}
             <Row>
                 {/* Sales Trend */}
