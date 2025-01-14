@@ -289,3 +289,5 @@ const DashboardProductDetails = ({ product }) => {
 };
 
 export default DashboardProductDetails;
+
+// here is product details

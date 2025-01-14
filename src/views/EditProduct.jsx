@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import FeatureListInput from '../components/FeatureListInput';
+
 import {
   Form,
   FormGroup,
@@ -24,7 +24,6 @@ const EditProduct = () => {
     price: '11',
     Manufacturer: 'asus',
     Category: 'tech',
-    Features: ["good screen", "fast processor"],
     image: null
   }
 
@@ -35,10 +34,8 @@ const EditProduct = () => {
     price: initial_product. price,
     Manufacturer: initial_product.Manufacturer,
     Category: initial_product.Category,
-    Features:initial_product.Features,
     image: null
   });
-  const [features, setFeatures] = useState(initial_product.Features);
 
   const [previewImage, setPreviewImage] = useState(null);
 
@@ -50,13 +47,6 @@ const EditProduct = () => {
     }));
   };
 
-  const handleFeatureChange = (newFeatures) => {
-    setFeatures(newFeatures);
-    setProduct(prevProduct => ({
-      ...prevProduct,
-      Features: newFeatures
-    }));
-  };
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -86,10 +76,10 @@ const EditProduct = () => {
       price: '',
       Manufacturer: '',
       Category: '',
-      Features: [],
+
       image: null
     });
-    setFeatures([]);
+
     setPreviewImage(null);
   };
 
@@ -99,7 +89,7 @@ const EditProduct = () => {
         <Col md="8" lg="6">
           <Card>
             <CardBody>
-              <h2 className="text-center mb-4">Add New Product</h2>
+              <h2 className="text-center mb-4">Edit your Product</h2>
               <Form onSubmit={handleSubmit}>
                 <FormGroup>
                   <Label for="productName">Product Name</Label>
@@ -168,7 +158,6 @@ const EditProduct = () => {
                   />
                 </FormGroup>
 
-                <FeatureListInput onChange={handleFeatureChange} previous_features={product.Features} />
 
                 <FormGroup>
                   <Label for="productImage">
@@ -210,3 +199,4 @@ const EditProduct = () => {
 };
 
 export default EditProduct;
+// here u can edit product

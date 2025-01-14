@@ -189,3 +189,5 @@ const AddProduct = () => {
 };
 
 export default AddProduct;
+
+// here u can add product

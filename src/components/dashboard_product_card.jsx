@@ -108,4 +108,4 @@ const DashboardProductCard = ({ product }) => {
 
 export default DashboardProductCard;
 
-//here is the dashboard card
+//here is the dashboard card.
