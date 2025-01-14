@@ -194,7 +194,6 @@ const DashboardProductCard = () => (
                             <Radar
                                 data={data}
                                 options={options}
-
                             />
                         </div>
 

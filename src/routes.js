@@ -26,6 +26,7 @@ import UserProfile from "views/UserProfile.js";
 import DashboardProducts from "views/DashboardProducts";
 import AddProduct from "views/AddProduct";
 import EditProduct from "views/EditProduct";
+import DashboardProductDetails from "views/DashboardProductDetails";
 
 var routes = [
   {
@@ -41,7 +42,15 @@ var routes = [
     name: "My Products",
     rtlName: "2لوحة القيادة",
     icon: "tim-icons icon-bag-16",
-    component: <DashboardProducts />,
+    component: <DashboardProducts/>,
+    layout: "/admin",
+  },
+  {
+    path: "/products/:id",
+    name: "Product details",
+    rtlName: "2لوحة القيادة",
+    icon: "tim-icons icon-bag-16",
+    component: <DashboardProductDetails/>,
     layout: "/admin",
   },
   {

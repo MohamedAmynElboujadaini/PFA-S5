@@ -44,19 +44,26 @@ ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, 
 
 
 function DashboardProducts() {
-
-
     return (
         <>
             <div className="content">
                 
                     <Row >
                         {/* Product Card */}
-                        <Col md="12" className="mb-4">
-                            <DashboardProductCard2/>
-                            <DashboardProductCard2/>
+                        <Col md="3" className="mb-4">
                             <DashboardProductCard2/>
                         </Col>
+                        <Col md="3" className="mb-4">
+                            <DashboardProductCard2/>
+                        </Col>
+                                                {/* Product Card */}
+                                                <Col md="3" className="mb-4">
+                            <DashboardProductCard2/>
+                        </Col>
+                        <Col md="3" className="mb-4">
+                            <DashboardProductCard2/>
+                        </Col>
+
                     </Row>
                 
             </div>

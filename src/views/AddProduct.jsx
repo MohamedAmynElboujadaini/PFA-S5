@@ -17,6 +17,8 @@ const AddProduct = () => {
     name: '',
     description: '',
     price: '',
+    Manufacturer: '',
+    Category:'',
     image: null
   });
 
@@ -56,6 +58,8 @@ const AddProduct = () => {
       name: '',
       description: '',
       price: '',
+      Manufacturer: '',
+      Category:'',
       image: null
     });
     setPreviewImage(null);
@@ -106,6 +110,31 @@ const AddProduct = () => {
                     onChange={handleChange}
                     min="0" 
                     step="0.01"
+                    required 
+                  />
+                </FormGroup>
+
+                <FormGroup>
+                  <Label for="Manufacturer">Manufacturer</Label>
+                  <Input 
+                    type="text" 
+                    name="manufacturer" 
+                    id="Manufacturer" 
+                    placeholder="Enter Manufacturer Name" 
+                    value={product.Manifacturer}
+                    onChange={handleChange}
+                    required 
+                  />
+                </FormGroup>
+                <FormGroup>
+                  <Label for="Category">Category</Label>
+                  <Input 
+                    type="text" 
+                    name="Category" 
+                    id="Category" 
+                    placeholder="Enter Category" 
+                    value={product.Manifacturer}
+                    onChange={handleChange}
                     required 
                   />
                 </FormGroup>
