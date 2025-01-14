@@ -21,10 +21,9 @@ const AddProduct = () => {
     price: '',
     Manufacturer: '',
     Category: '',
-    Features: [],
     image: null
   });
-  const [features, setFeatures] = useState([]);
+  
 
   const [previewImage, setPreviewImage] = useState(null);
 
@@ -36,13 +35,7 @@ const AddProduct = () => {
     }));
   };
 
-  const handleFeatureChange = (newFeatures) => {
-    setFeatures(newFeatures);
-    setProduct(prevProduct => ({
-      ...prevProduct,
-      Features: newFeatures
-    }));
-  };
+
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -72,10 +65,10 @@ const AddProduct = () => {
       price: '',
       Manufacturer: '',
       Category: '',
-      Features: [],
+      
       image: null
     });
-    setFeatures([]);
+    
     setPreviewImage(null);
   };
 
@@ -154,7 +147,7 @@ const AddProduct = () => {
                   />
                 </FormGroup>
 
-                <FeatureListInput onChange={handleFeatureChange} />
+                
 
                 <FormGroup>
                   <Label for="productImage">

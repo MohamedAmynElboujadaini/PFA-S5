@@ -16,7 +16,7 @@ import {
 
 
 
-const AddProduct = () => {
+const EditProduct = () => {
   //get product with axios
   const initial_product={
     name: 'laptop',
@@ -209,4 +209,4 @@ const AddProduct = () => {
   );
 };
 
-export default AddProduct;
+export default EditProduct;

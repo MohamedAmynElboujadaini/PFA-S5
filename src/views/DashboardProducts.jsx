@@ -27,8 +27,6 @@ import { Link } from "react-router-dom";
 import DashboardProductCard from "components/dashboard_product_card.jsx";
 
 
-
-
 import {
     chartExample1,
     chartExample2,

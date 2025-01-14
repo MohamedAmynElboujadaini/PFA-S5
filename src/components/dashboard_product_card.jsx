@@ -107,3 +107,5 @@ const DashboardProductCard = ({ product }) => {
 };
 
 export default DashboardProductCard;
+
+//here is the dashboard card
